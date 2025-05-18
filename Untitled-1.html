@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MQ Alumni AI Meet-Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold">MQ Alumni AI Meet-Up</h1>
+      <p class="mt-2">Connect, Learn, and Grow with AI-Powered Professional Development</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-gray-800 text-white py-2">
+    <div class="container mx-auto px-4">
+      <ul class="flex space-x-4">
+        <li><a href="#home" class="hover:underline">Home</a></li>
+        <li><a href="#services" class="hover:underline">Services</a></li>
+        <li><a href="#chatbot" class="hover:underline">Chatbot</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="py-12">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-4">Welcome to MQ Alumni AI Meet-Up</h2>
+      <p class="text-lg mb-6">Join our community of Macquarie University postgraduate alumni to stay updated on AI trends, enhance your career, and connect with like-minded professionals. Our AI-powered chatbot and in-person meet-ups offer personalized professional development opportunities.</p>
+      <a href="#services" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-white py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Service 1 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Personalized Answers</h3>
+          <p>Get tailored responses to your AI-related professional development queries using our AI chatbot, trained by our community.</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Mentorship Program</h3>
+          <p>Connect with industry experts for 1:1 mentorship to guide your career goals and enhance your skills.</p>
+        </div>
+        <!-- Service 3 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">CV/Resume/LinkedIn Upgrades</h3>
+          <p>Receive AI-driven suggestions to optimize your CV, resume, and LinkedIn profile for maximum impact.</p>
+        </div>
+        <!-- Service 4 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Mock Interviews</h3>
+          <p>Practice with AI-simulated interviews tailored to your target role, complete with feedback to boost confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chatbot Section -->
+  <section id="chatbot" class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Talk to Our AI Chatbot</h2>
+      <p class="text-center mb-6">Ask about professional development opportunities, mentorship, CV optimization, or mock interviews. Our chatbot learns from member inputs to provide relevant, personalized advice.</p>
+      <!-- Placeholder for Jotform AI Chatbot iframe -->
+      <div class="flex justify-center">
+        <iframe
+          src="https://form.jotform.com/your-jotform-chatbot-id"
+          class="w-full max-w-2xl h-[600px] border-2 border-gray-300 rounded-lg"
+          title="AI Chatbot"
+        ></iframe>
+      </div>
+      <p class="text-center mt-4 text-sm">Powered by Jotform AI. Your data is private and secure.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-white py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Join Our Community</h2>
+      <p class="text-center mb-6">Sign up to attend our meet-ups or inquire about our services.</p>
+      <div class="max-w-lg mx-auto">
+        <form class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium">Full Name</label>
+            <input type="text" id="name" class="w-full p-2 border rounded-lg" required>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium">Email</label>
+            <input type="email" id="email" class="w-full p-2 border rounded-lg" required>
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium">Message</label>
+            <textarea id="message" class="w-full p-2 border rounded-lg" rows="4"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 MQ Alumni AI Meet-Up. All rights reserved.</p>
+      <p class="mt-2 text-sm">Committed to Responsible AI: Transparency, Fairness, and Privacy.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Note: Form submission is not functional in this static site.
+    // For BUSA6430, the form is for UI purposes only, as no backend is allowed.
+    document.querySelector('form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you for your submission! This is a demo form.');
+    });
+  </script>
+</body>
+</html>
